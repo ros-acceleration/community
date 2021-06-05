@@ -1,19 +1,30 @@
-# {{NAME}} Working Group
-
-{{
-TEMPLATE: This repository acts as a template for individual Working Groups to start from.
-All information in double curly-braces must be replaced with details for the specific Working Group.
-NOTE: check the issue and pull request templates as well, under `.github` directory.
-
-This is a template repository.
-When starting a new working group, [use this template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) to create a new repository in the WG organization.
-}}
+# ROS 2 Hardware Acceleration Working Group
 
 This document defines the scope and governance of the Working Group (WG).
 
-{{Mission: The {{NAME}} Working Group's mission is to...}}
+| Item | Description |
+|------|-------------|
+| **Mission** | Drive creation, maintenance and testing of acceleration kernels on top of open standards (C++ and OpenCL) for optimized ROS 2 and Gazebo interactions over different compute substrates (including FPGAs, GPUs and ASICs). |
+| **Scope** | hardware acceleration in a) embedded (edge) devices, b) workstations, c) data centers and d) cloud |
+| **Objectives** | 1) Design tools and conventions to seamlessly integrate acceleration kernels and related embedded binaries into the ROS 2 computational graphs leveraging its existing build system (ament) and meta build tools (colcon). |
+|  |  2) Provide reference examples and blueprints for acceleration architectures used in ROS 2 and Gazebo. |
+|  |  3) Facilitate testing environments that allow to benchmark accelerators with special focus on power consumption and time. |
+|  |  4) Survey the community interests on acceleration for ROS 2 and Gazebo. |
+|  |  5) Produce demonstrators with robot components, real robots and fleets that include acceleration to meet their targets |
 
-{{Scope: the types of topics, tools, libraries, applications, documents, etc, that this working group focuses on. }}
+
+- [ROS 2 Hardware Acceleration Working Group](#ros-2-hardware-acceleration-working-group)
+  - [Subprojects](#subprojects)
+    - [Subproject List](#subproject-list)
+    - [Standards for subprojects](#standards-for-subprojects)
+    - [Adding new subprojects](#adding-new-subprojects)
+    - [Subproject changes](#subproject-changes)
+    - [Deprecating subprojects](#deprecating-subprojects)
+  - [Governance](#governance)
+    - [Meetings](#meetings)
+    - [Communication Channels](#communication-channels)
+    - [Membership, Roles and Organization Management](#membership-roles-and-organization-management)
+    - [Modifying this governance document](#modifying-this-governance-document)
 
 ## Subprojects
 
@@ -24,14 +35,14 @@ Its meetings and membership are largely focused on the direction, design, and wo
 
 The following subprojects are owned by the Working Group:
 
-{{
+<!-- {{
 
 * template-project
   * Description: Brief description of project. Remove this item and add new projects using this format.
   * Repositories
     * link-to-repository
 
-}}
+}} -->
 
 ### Standards for subprojects
 
@@ -40,12 +51,12 @@ Subprojects must meet the following criteria (and the WG agrees to maintain them
 * Build passes against ROS 2 master
 * The ROS 2 standard linter set is enabled and adhered to
 * If packages are part of nightly builds on the ROS build farm, there are no reported warnings or test failures
-* Quality builds are green (address sanitizer, thread sanitizer, clang thread safety analysis)
-* Test suite passes
-* Code coverage is measured, and non-decreasing level is enforced in PRs
 * Issues and pull requests receive prompt responses
 * Releases go out regularly when bugfixes or new features are introduced
 * The backlog is maintained, avoiding longstanding stale issues
+* Quality builds are green (address sanitizer, thread sanitizer, clang thread safety analysis)
+* Test suite passes
+* Code coverage is measured, and non-decreasing level is enforced in PRs
 
 ### Adding new subprojects
 
@@ -74,17 +85,23 @@ If the repositories of the subproject are under the WG's GitHub organization, th
 
 ### Meetings
 
-* Regular WG Meeting: {{time schedule for meetings}}
+* Regular WG Meeting: TBD
   * {{when and where will meetings be announced}}
   * {{what artifacts will be posted after the meetings, e.g. Minutes, Recordings}}
 
 ### Communication Channels
 
-{{How can members communicate with each other? Discourse, Discord, IRC, email list, etc.}}
+* Meeting invite group: [Meeting invite group](https://groups.google.com/g/ros-2-hardware-acceleration-wg)
+* Github organization: [ros-acceleration](https://github.com/ros-acceleration)
+* Discourse tag: [wg-acceleration](https://discourse.ros.org/tag/wg-acceleration)
 
+
+<!-- {{How can members communicate with each other? Discourse, Discord, IRC, email list, etc.}} -->
+
+<!-- 
 ### Backlog Management
 
-{{Is any project management software/site used to track work for this Working Group? How can new members discover the highest impact tasks they could take on? GitHub Projects, ZenHub, etc.}}
+{{Is any project management software/site used to track work for this Working Group? How can new members discover the highest impact tasks they could take on? GitHub Projects, ZenHub, etc.}} -->
 
 ### Membership, Roles and Organization Management
 
@@ -114,5 +131,4 @@ The Lead role cannot be applied for, as it is an appointee of the ROS 2 TSC.
 
 ### Modifying this governance document
 
-Changes to this document will be made via Pull Request.
-The PR will be merged on unanimous agreement from Approvers.
+Changes to this document will be made via Pull Request. The PR will be merged on unanimous agreement from Approvers.

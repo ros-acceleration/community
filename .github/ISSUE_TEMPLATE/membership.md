@@ -15,7 +15,7 @@ Role: requested role
 
 ### Requirements
 
-- [ ] I have reviewed the community governance model / guidelines (https://github.com/{{ORGANIZATION}}/community)
+- [ ] I have reviewed the community governance model / guidelines (https://github.com/ros-acceleration/community)
 - [ ] I have enabled 2FA on my GitHub account (https://github.com/settings/security)
 - [ ] I am actively contributing to 1 or more working group subprojects
 
