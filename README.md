@@ -14,6 +14,11 @@ This document defines the scope and governance of the Working Group (WG).
 
 
 - [ROS 2 Hardware Acceleration Working Group](#ros-2-hardware-acceleration-working-group)
+  - [Architecture](#architecture)
+  - [Reference hardware platforms](#reference-hardware-platforms)
+    - [Official](#official)
+    - [Community](#community)
+    - [Adding your board](#adding-your-board)
   - [Subprojects](#subprojects)
     - [Subproject List](#subproject-list)
     - [Standards for subprojects](#standards-for-subprojects)
@@ -25,6 +30,64 @@ This document defines the scope and governance of the Working Group (WG).
     - [Communication Channels](#communication-channels)
     - [Membership, Roles and Organization Management](#membership-roles-and-organization-management)
     - [Modifying this governance document](#modifying-this-governance-document)
+
+
+## Architecture
+
+```
+        ROS 2 stack                        HAWG @ ROS 2 stack
+
++------------------------+             +--------------------+
+|                        |             |  xilinx_examples   |
+|       user land        |  +-------------------+-----------+-------+--------------+
+|                        |  |       Drivers     |     Libraries     |    Cloud     |
++------------------------+  +---------------+---+--------+----------+--------------+
+|                        |  |   ament_vitis | ament_rocm |          |  accel_fw    |
+|                        |  +---------------+----------+-+----------+--------------+
+|     ROS tooling        |  |     ament_acceleration   | colcon_accel |  accel_fw  |
+|                        |  +------------------------------------------------------+
+|                        |  |      build system        |   meta build |  firmware  |
++------------------------+  +--------------------------+--------------+------------+
+|  ROS client library    |
++------------------------+
+|  ROS middleware iface  |
++------------------------+
+| middleware impl. adapt |
++------------------------+
+|                        |
+|    middleware impl.    |
+|                        |
+|                        |
++------------------------+
+```
+
+Join the [first WG meeting (or check the recording)](https://discourse.ros.org/t/announcing-the-hardware-acceleration-wg-meeting-1/20826) for more details on the architecture.
+
+## Reference hardware platforms
+
+### Official
+The following boards are supported:
+
+| Board | Picture | Description |
+|------------|-------|-------------|
+| [Kria `K26` Adaptive System-on-Module](https://www.xilinx.com/products/som/kria/k26c-commercial.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/products/som/som-k26-main.png) | The Kria™ K26 SOM is the first adaptive Single Board Computer, a production-grade and tiny System-on-Module for edge vision and robotics applications. Available in Commercial and Industrial Grade variants.  |
+| [Kria `KV260` Vision AI Starter Kit](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/products/som/som-kv260-4.png) | The Kria™ KV260 starter kit is a development platform for the K26, the first adaptive Single Board Computer. KV260 offers a compact production-grade board for edge vision and robotics applications.  |
+
+### Community
+
+The following list includes boards that have been validated and have unofficial community support. *No guarantees provided since no CI jobs are run on on these boards*.
+
+<details><summary>Community supported boards</summary>
+
+| Board | Picture | Description |
+|------------|-------|-------------|
+| [Xilinx Zynq UltraScale+ MPSoC `ZCU102` Evaluation Kit](https://www.xilinx.com/products/boards-and-kits/ek-u1-zcu102-g.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/kits/whats-inside/zcu102-evaluation-board-w.jpg) | The ZCU102 Evaluation Kit enables designers to jumpstart designs for automotive, industrial, video, and communications applications. This kit features a Zynq® UltraScale+™ MPSoC with a quad-core Arm® Cortex®-A53, dual-core Cortex-R5F real-time processors, and a Mali™-400 MP2 graphics processing unit  |
+| [Zynq UltraScale+ MPSoC `ZCU104` Evaluation Kit](https://www.xilinx.com/products/boards-and-kits/zcu104.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/kits/whats-inside/zcu104-evaluation-board-w.jpg) |  The ZCU104 Evaluation Kit enables designers to jumpstart designs for embedded vision applications such as surveillance, Advanced Driver Assisted Systems (ADAS), machine vision, Augmented Reality (AR), drones and medical imaging. This kit features a Zynq® UltraScale+™ MPSoC EV device with video codec and supports many common peripherals and interfaces for embedded vision use case. |
+
+</details>
+
+### Adding your board
+We're working with the community on a plan to add new boards to the lists above. Create an issue if you'd like to show interest before we come up with a formal community plan.
 
 ## Subprojects
 
@@ -98,7 +161,7 @@ If the repositories of the subproject are under the WG's GitHub organization, th
 
 <!-- {{How can members communicate with each other? Discourse, Discord, IRC, email list, etc.}} -->
 
-<!-- 
+<!--
 ### Backlog Management
 
 {{Is any project management software/site used to track work for this Working Group? How can new members discover the highest impact tasks they could take on? GitHub Projects, ZenHub, etc.}} -->
