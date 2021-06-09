@@ -35,30 +35,30 @@ This document defines the scope and governance of the Working Group (WG).
 ## Architecture
 
 ```
-        ROS 2 stack                        HAWG @ ROS 2 stack
+  ROS 2 stack                   HAWG @ ROS 2 stack
 
-+------------------------+             +--------------------+
-|                        |             |  xilinx_examples   |
-|       user land        |  +-------------------+-----------+-------+--------------+
-|                        |  |       Drivers     |     Libraries     |    Cloud     |
-+------------------------+  +---------------+---+--------+----------+--------------+
-|                        |  |   ament_vitis | ament_rocm |          |  accel_fw    |
-|                        |  +---------------+----------+-+----------+--------------+
-|     ROS tooling        |  |     ament_acceleration   | colcon_accel |  accel_fw  |
-|                        |  +------------------------------------------------------+
-|                        |  |      build system        |   meta build |  firmware  |
-+------------------------+  +--------------------------+--------------+------------+
-|  ROS client library    |
-+------------------------+
-|  ROS middleware iface  |
-+------------------------+
-| middleware impl. adapt |
-+------------------------+
-|                        |
-|    middleware impl.    |
-|                        |
-|                        |
-+------------------------+
++-------------+             +--------------------+
+|             |             |  xilinx_examples   |
+| user land   |  +-------------------+-----------+-------+--------------+
+|             |  |       Drivers     |     Libraries     |    Cloud     |
++-------------+  +---------------+---+--------+-------------------------+
+|             |  |   ament_vitis | ament_rocm |          |  accel_fw    |
+|             |  +---------------+----------+-+----------+-+------------+
+|  tooling    |  |     ament_acceleration   | colcon_accel |  accel_fw  |
+|             |  +------------------------------------------------------+
+|             |  |      build system        |   meta build |  firmware  |
++-------------+  +--------------------------+--------------+------------+
+|     rcl     |
++-------------+
+|     rmw     |
++-------------+
+|   adapter   |
++-------------+
+|             |
+| middleware  |
+|             |
+|             |
++-------------+
 ```
 
 Join the [first WG meeting (or check the recording)](https://discourse.ros.org/t/announcing-the-hardware-acceleration-wg-meeting-1/20826) for more details on the architecture.
