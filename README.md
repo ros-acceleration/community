@@ -17,7 +17,7 @@ This document defines the scope and governance of the Working Group (WG).
   - [Architecture](#architecture)
   - [Reference hardware platforms](#reference-hardware-platforms)
     - [Official](#official)
-    - [Community](#community)
+    - [Unofficial](#unofficial)
     - [Adding your board](#adding-your-board)
   - [Subprojects](#subprojects)
     - [Subproject List](#subproject-list)
@@ -73,7 +73,7 @@ The following boards are supported:
 | [Kria `K26` Adaptive System-on-Module](https://www.xilinx.com/products/som/kria/k26c-commercial.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/products/som/som-k26-main.png) | The Kria™ K26 SOM is the first adaptive Single Board Computer, a production-grade and tiny System-on-Module for edge vision and robotics applications. Available in Commercial and Industrial Grade variants.  |
 | [Kria `KV260` Vision AI Starter Kit](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/products/som/som-kv260-4.png) | The Kria™ KV260 starter kit is a development platform for the K26, the first adaptive Single Board Computer. KV260 offers a compact production-grade board for edge vision and robotics applications.  |
 
-### Community
+### Unofficial
 
 The following list includes boards that have been validated and have unofficial community support. *No guarantees provided since no CI jobs are run on on these boards*.
 
