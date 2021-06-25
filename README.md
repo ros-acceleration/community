@@ -71,7 +71,7 @@ The following boards are supported:
 | Board | Picture | Description |
 |------------|-------|-------------|
 | [Kria `K26` Adaptive System-on-Module](https://www.xilinx.com/products/som/kria/k26c-commercial.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/products/som/som-k26-main.png) | The Kria™ K26 SOM is the first adaptive Single Board Computer, a production-grade and tiny System-on-Module for edge vision and robotics applications. Available in Commercial and Industrial Grade variants.  |
-| [Kria `KV260` Vision AI Starter Kit](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/products/som/som-kv260-4.png) | The Kria™ KV260 starter kit is a development platform for the K26, the first adaptive Single Board Computer. KV260 offers a compact production-grade board for edge vision and robotics applications.  |
+| [Kria `KV260` Vision AI Starter Kit](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/products/som/som-kv260-4.png) | The Kria™ KV260 starter kit is a development platform for the K26, the first adaptive Single Board Computer. KV260 offers a compact board for edge vision and robotics applications.  |
 
 ### Unofficial
 
