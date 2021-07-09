@@ -154,6 +154,7 @@ If the repositories of the subproject are under the WG's GitHub organization, th
 
 ### Communication Channels
 
+* Instant messaging: [Matrix community](https://matrix.to/#/+hawg:matrix.org) (*Matrix is an open network for secure, decentralized communication*).
 * Meeting invite group: [Meeting invite group](https://groups.google.com/g/ros-2-hardware-acceleration-wg)
 * Github organization: [ros-acceleration](https://github.com/ros-acceleration)
 * Discourse tag: [wg-acceleration](https://discourse.ros.org/tag/wg-acceleration)
@@ -161,10 +162,13 @@ If the repositories of the subproject are under the WG's GitHub organization, th
 
 <!-- {{How can members communicate with each other? Discourse, Discord, IRC, email list, etc.}} -->
 
-<!--
+
 ### Backlog Management
 
-{{Is any project management software/site used to track work for this Working Group? How can new members discover the highest impact tasks they could take on? GitHub Projects, ZenHub, etc.}} -->
+Backlog management is performed using [Github Projects](https://github.com/ros-acceleration/community/projects). So far:
+
+- [Phase 1: tools, examples, benchmarking and first demonstrators](https://github.com/ros-acceleration/community/projects/1)
+
 
 ### Membership, Roles and Organization Management
 
