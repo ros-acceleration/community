@@ -1,6 +1,6 @@
 # ROS 2 Hardware Acceleration Working Group
 
-This document defines the scope and governance of the Working Group (WG).
+This document defines the scope and governance of the Working Group (WG). The rationale behind some decisions is further justified in `REP-2008`: *ROS 2 Hardware Acceleration Architecture and Conventions* (see [pending PR](https://github.com/ros-infrastructure/rep/pull/324)).
 
 | Item | Description |
 |------|-------------|
@@ -28,40 +28,16 @@ This document defines the scope and governance of the Working Group (WG).
   - [Governance](#governance)
     - [Meetings](#meetings)
     - [Communication Channels](#communication-channels)
+    - [Backlog Management](#backlog-management)
     - [Membership, Roles and Organization Management](#membership-roles-and-organization-management)
     - [Modifying this governance document](#modifying-this-governance-document)
+  - [References](#references)
 
 
 ## Architecture
 
-```
-  ROS 2 stack                   HAWG @ ROS 2 stack
+![](imgs/build.svg)
 
-+-------------+             +--------------------+
-|             |             |  xilinx_examples   |
-| user land   |  +-------------------+-----------+-------+--------------+
-|             |  |       Drivers     |     Libraries     |    Cloud     |
-+-------------+  +---------------+---+--------+-------------------------+
-|             |  |   ament_vitis | ament_rocm |          |  accel_fw    |
-|             |  +---------------+----------+-+----------+-+------------+
-|  tooling    |  |     ament_acceleration   | colcon_accel |  accel_fw  |
-|             |  +------------------------------------------------------+
-|             |  |      build system        |   meta build |  firmware  |
-+-------------+  +--------------------------+--------------+------------+
-|     rcl     |
-+-------------+
-|     rmw     |
-+-------------+
-|   adapter   |
-+-------------+
-|             |
-| middleware  |
-|             |
-|             |
-+-------------+
-```
-
-Join the [first WG meeting (or check the recording)](https://discourse.ros.org/t/announcing-the-hardware-acceleration-wg-meeting-1/20826) for more details on the architecture.
 
 ## Reference hardware platforms
 
@@ -98,28 +74,21 @@ Its meetings and membership are largely focused on the direction, design, and wo
 
 The following subprojects are owned by the Working Group:
 
-<!-- {{
-
-* template-project
-  * Description: Brief description of project. Remove this item and add new projects using this format.
-  * Repositories
-    * link-to-repository
-
-}} -->
+- [`ament_vitis`](https://github.com/ros-acceleration/ament_vitis): CMake macros and utilities to include Vitis platform into the ROS 2 build system (`ament`) and its development flows.
+- [`acceleration_firmware`](https://github.com/ros-acceleration/acceleration_firmware): Base ROS 2 package for hardware acceleration firmware. Used to organize firmware dependencies across vendors.
+- [`colcon-acceleration`](https://github.com/ros-acceleration/colcon-acceleration): An extension for colcon-core to include Hardware Acceleration capabilities.
+- [`acceleration_examples`](https://github.com/ros-acceleration/acceleration_examples): ROS 2 package examples demonstrating the use of hardware acceleration.
+- [`ros2acceleration`](https://github.com/ros-acceleration/ros2acceleration): acceleration command for ROS 2 command line tools.
 
 ### Standards for subprojects
 
 Subprojects must meet the following criteria (and the WG agrees to maintain them upon adoption).
 
-* Build passes against ROS 2 master
-* The ROS 2 standard linter set is enabled and adhered to
+* Build passes against ROS 2 Foxy - in the future may move to Rolling
 * If packages are part of nightly builds on the ROS build farm, there are no reported warnings or test failures
 * Issues and pull requests receive prompt responses
 * Releases go out regularly when bugfixes or new features are introduced
 * The backlog is maintained, avoiding longstanding stale issues
-* Quality builds are green (address sanitizer, thread sanitizer, clang thread safety analysis)
-* Test suite passes
-* Code coverage is measured, and non-decreasing level is enforced in PRs
 
 ### Adding new subprojects
 
@@ -148,9 +117,12 @@ If the repositories of the subproject are under the WG's GitHub organization, th
 
 ### Meetings
 
-* Regular WG Meeting: TBD
-  * {{when and where will meetings be announced}}
-  * {{what artifacts will be posted after the meetings, e.g. Minutes, Recordings}}
+Except for vacation periods and other exceptions, regular WG Meeting will generally happen once a month or more often. Meetings are announced in ROS Discourse and [minutes](https://docs.google.com/document/d/185Cy1xjpAOgJygEOnlf5OCgOQTywmF0qgSpS3GiW16Q/edit#) are kept.
+
+- [Proposal for ROS 2 Hardware Acceleration Working Group (HAWG)](https://discourse.ros.org/t/proposal-for-ros-2-hardware-acceleration-working-group-hawg/20112/27)
+- [Hardware Acceleration WG, meeting #1](https://discourse.ros.org/t/announcing-the-hardware-acceleration-wg-meeting-1/20826)
+- [Hardware Acceleration WG, meeting #2](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-2/21789) (there's an upcoming meeting at the end of Sept.)
+
 
 ### Communication Channels
 
@@ -199,3 +171,9 @@ The Lead role cannot be applied for, as it is an appointee of the ROS 2 TSC.
 ### Modifying this governance document
 
 Changes to this document will be made via Pull Request. The PR will be merged on unanimous agreement from Approvers.
+
+## References
+
+- [1] [Mayoral-Vilches, V., & Corradi, G. (2021). Adaptive Computing in Robotics. Xilinx Inc.](http://xilinx.eetrend.com/files/2021-08/wen_zhang_/100553177-218183-wp537-adaptive-computing-robotics.pdf)
+
+- [2] Mayoral-Vilches, V., REP-2008 - ROS 2 Hardware Acceleration Architecture and Conventions (see [pending PR](https://github.com/ros-infrastructure/rep/pull/324))
