@@ -180,6 +180,12 @@ Changes to this document will be made via Pull Request. The PR will be merged on
 
 ## References
 
-- [1] [Mayoral-Vilches, V., & Corradi, G. (2021). Adaptive Computing in Robotics. Xilinx Inc.](http://xilinx.eetrend.com/files/2021-08/wen_zhang_/100553177-218183-wp537-adaptive-computing-robotics.pdf)
+- [1] [Mayoral-Vilches, V., & Corradi, G. (2021). Adaptive Computing in Robotics, Leveraging ROS 2 to Enable Software-Defined Hardware for FPGAs. arXiv preprint arXiv:2109.03276.](https://arxiv.org/ftp/arxiv/papers/2109/2109.03276.pdf)
 
 - [2] Mayoral-Vilches, V., REP-2008 - ROS 2 Hardware Acceleration Architecture and Conventions (see [pending PR](https://github.com/ros-infrastructure/rep/pull/324))
+
+- [3] Mayoral-Vilches, V. (2021). Kria Robotics Stack A ROS 2-centric Approach for Hardware Acceleration in Robotics. Xilinx Inc.
+
+- [4] [Lienen, C., Platzner, M., & Rinner, B. (2020, December). ReconROS: Flexible Hardware Acceleration for ROS2 Applications. In 2020 International Conference on Field-Programmable Technology (ICFPT) (pp. 268-276). IEEE.](https://bernhardrinner.com/pubs/2020/Lienen_FPT2020.pdf)
+
+- [5] [Lienen, C., & Platzner, M. (2021). Design of Distributed Reconfigurable Robotics Systems with ReconROS. arXiv preprint arXiv:2107.07208.](https://arxiv.org/pdf/2107.07208)
