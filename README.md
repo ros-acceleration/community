@@ -67,7 +67,7 @@ The following list includes boards that have been validated and have unofficial 
 The recipe for adding a new board to the community is as follows:
 
 1. Check out the [Initial draft of REP-2008 - ROS 2 Hardware Acceleration Architecture and Conventions](https://github.com/ros-infrastructure/rep/pull/324)
-2. Create your own firmware repository (e.g. `acceleration_firmware_Ultra96V2`) for the corresponding board (see [acceleration_firmware_kv260](https://github.com/ros-acceleration/acceleration_firmware_kv260) for an example) 
+2. Create your own firmware repository (e.g. `acceleration_firmware_Ultra96V2`) for the corresponding board (see [acceleration_firmware_kv260](https://github.com/ros-acceleration/acceleration_firmware_kv260) for an example)
 3. Once the firmware repo is finalized, assess the capabilities of the hardware according to REP-2008 and create a table in the README.md that argues about it (see [example here](https://github.com/ros-acceleration/acceleration_firmware_kv260#hardware-acceleration-capabilities))
 4. Submit a PR to [ros-acceleration/community](https://github.com/ros-acceleration/community) to add your board to the community, with the corresponding support level according to REP-2008
 
@@ -126,8 +126,8 @@ If the repositories of the subproject are under the WG's GitHub organization, th
 Except for vacation periods and other exceptions, regular WG Meeting will generally happen once a month or more often. Meetings are announced in ROS Discourse and [minutes](https://docs.google.com/document/d/185Cy1xjpAOgJygEOnlf5OCgOQTywmF0qgSpS3GiW16Q/edit#) are kept.
 
 - [Proposal for ROS 2 Hardware Acceleration Working Group (HAWG)](https://discourse.ros.org/t/proposal-for-ros-2-hardware-acceleration-working-group-hawg/20112/27)
-- [Hardware Acceleration WG, meeting #1](https://discourse.ros.org/t/announcing-the-hardware-acceleration-wg-meeting-1/20826)
-- [Hardware Acceleration WG, meeting #2](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-2/21789) (there's an upcoming meeting at the end of Sept.)
+- [Hardware Acceleration WG, meeting #1](https://discourse.ros.org/t/announcing-the-hardware-acceleration-wg-meeting-1/20826) ([recording](https://www.youtube.com/watch?v=QfRHJgeSAOw))
+- [Hardware Acceleration WG, meeting #2](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-2/21789) ([recording](https://www.youtube.com/watch?v=a1I4rue1px8))
 
 
 ### Communication Channels
