@@ -14,6 +14,7 @@ This document defines the scope and governance of the Working Group (WG). The ra
 |  |  `2022` :new: 7) Acceleration of complete ROS 2 computational graphs |
 |  |  `2022` :new: 8) Merge first hardware accelerators (kernels) into upstream packages (*candidate*: [image_pipeline](https://github.com/ros-acceleration/image_pipeline), see `image_pipeline` instrumented at [#717](https://github.com/ros-perception/image_pipeline/pull/717) ) |
 |  |  `2022` :new: 9) Documentation and a *"methodology to hardware accelerate a ROS 2 package"* |
+|  |  `2022` :new: 10) Organize *workshops on robotics and ROS 2 Hardware Acceleration* |
 
 
 
