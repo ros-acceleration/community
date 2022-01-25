@@ -18,7 +18,7 @@ This document defines the scope and governance of the Working Group (WG). The ra
 
 
 
-[^1]: See [ament_vitis]()
+[^1]: See [ament_vitis](https://github.com/ros-acceleration/ament_vitis)
 [^3]: See [acceleration_firmware_kv260](https://github.com/ros-acceleration/acceleration_firmware_kv260) for an exemplary *vendor extension* of the `acceleration_firmware` package
 
 
