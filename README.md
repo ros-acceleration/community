@@ -11,7 +11,7 @@ This document defines the scope and governance of the Working Group (WG). The ra
 |  |  `2022` :white_check_mark: 3) Facilitate testing environments that allow to benchmark accelerators with special focus on power consumption and time spent on computations (see [HAWG benchmarking approach](https://github.com/ros-infrastructure/rep/pull/324/files#diff-f230b6aa06d86bf594d8e431300e453ad7343e8f4b1932252b6d36c62a8b5e0aR203-R267), [community#9](https://github.com/ros-acceleration/community/issues/9), [tracetools_acceleration](https://github.com/ros-acceleration/tracetools_acceleration), [ros2_kria](https://github.com/ros-acceleration/ros2_kria)) |
 |  | `2022` :warning: 4) Survey the community interests on acceleration for ROS 2 and Gazebo (see [discourse announcement](https://discourse.ros.org/t/hardware-acceleration-in-ros-2-and-gazebo-survey/23228), [survey](https://forms.gle/JibETmf92XyUde4r5)). |
 |  | `2022` :warning: 5) Produce demonstrators with robot components, real robots and fleets that include acceleration to meet their targets (see [acceleration_examples](https://github.com/ros-acceleration/acceleration_examples)). |
-|  |  `2022` :new: 7) Acceleration of complete ROS 2 computational graphs |
+|  |  `2022` :white_check_mark: 7) Acceleration of complete ROS 2 computational graphs https://github.com/ros-acceleration/community/issues/20 |
 |  |  `2022` :new: 8) Merge first hardware accelerators (kernels) into upstream packages (*candidate*: [image_pipeline](https://github.com/ros-acceleration/image_pipeline), see `image_pipeline` instrumented at [#717](https://github.com/ros-perception/image_pipeline/pull/717) ) |
 |  |  `2022` :new: 9) Documentation and a *"methodology to hardware accelerate a ROS 2 package"* |
 |  |  `2022` :new: 10) Organize *workshops on robotics and ROS 2 Hardware Acceleration* |
@@ -45,7 +45,7 @@ This document defines the scope and governance of the Working Group (WG). The ra
 
 ## Architecture
 
-![](imgs/build.svg)
+![](imgs/architecture.png)
 
 
 ## Reference hardware platforms
@@ -138,7 +138,8 @@ Except for vacation periods and other exceptions, regular WG Meeting will genera
 - [ROS 2 Hardware Acceleration Working Group, meeting #2](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-2/21789) ([recording](https://www.youtube.com/watch?v=a1I4rue1px8))
 - [ROS 2 Hardware Acceleration Working Group, meeting #3](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-3/22535) ([recording](https://www.youtube.com/watch?v=GUwS3La8s6Y))
 - [ROS 2 Hardware Acceleration Working Group, meeting #4](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-4/22972) ([recording](https://youtu.be/zHawzTtxuhA))
-- [ROS 2 Hardware Acceleration Working Group, meeting #5](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-5/23827)
+- [ROS 2 Hardware Acceleration Working Group, meeting #5](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-5/23827) ([recording](https://www.youtube.com/watch?v=ac-Yr2sRIxk&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=5))
+- [ROS 2 Hardware Acceleration Working Group, meeting #6](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-6/24207/6)
 
 
 ### Communication Channels
