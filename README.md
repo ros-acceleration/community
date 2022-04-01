@@ -15,6 +15,7 @@ This document defines the scope and governance of the Working Group (WG). The ra
 |  |  `2022` :new: 8) Merge first hardware accelerators (kernels) into upstream packages (*candidate*: [image_pipeline](https://github.com/ros-acceleration/image_pipeline), see `image_pipeline` instrumented at [#717](https://github.com/ros-perception/image_pipeline/pull/717) ) |
 |  |  `2022` :new: 9) Documentation and a *"methodology to hardware accelerate a ROS 2 package"* |
 |  |  `2022` :new: 10) Organize *workshops on robotics and ROS 2 Hardware Acceleration* |
+|  |  `2022` :new: (extra) 11) Robotic Processing Unit, first demonstrators [#25](https://github.com/ros-acceleration/community/issues/25) |
 
 
 
@@ -89,14 +90,20 @@ Its meetings and membership are largely focused on the direction, design, and wo
 
 The following subprojects are owned by the Working Group:
 
+**Core Architecture**
+- [`ament_acceleration`](https://github.com/ros-acceleration/ament_acceleration): CMake macros and utilities to include hardware acceleration in the ROS 2 build system (ament) and its development flows.
 - [`ament_vitis`](https://github.com/ros-acceleration/ament_vitis): CMake macros and utilities to include Vitis platform into the ROS 2 build system (`ament`) and its development flows.
-- [`acceleration_firmware`](https://github.com/ros-acceleration/acceleration_firmware): Base ROS 2 package for hardware acceleration firmware. Used to organize firmware dependencies across vendors.
-- [`colcon-acceleration`](https://github.com/ros-acceleration/colcon-acceleration): An extension for colcon-core to include Hardware Acceleration capabilities.
-- [`acceleration_examples`](https://github.com/ros-acceleration/acceleration_examples): ROS 2 package examples demonstrating the use of hardware acceleration.
+- [`colcon-hardware-acceleration`](https://github.com/ros-acceleration/colcon-hardware-acceleration): An extension for colcon-core to include Hardware Acceleration capabilities.
 - [`ros2acceleration`](https://github.com/ros-acceleration/ros2acceleration): acceleration command for ROS 2 command line tools.
 - [`tracetools_acceleration`](https://github.com/ros-acceleration/tracetools_acceleration): LTTng tracing provider wrapper for ROS 2 packages in the Hardware Acceleration Working Group.
+- [`acceleration_firmware`](https://github.com/ros-acceleration/acceleration_firmware): Base ROS 2 package for hardware acceleration firmware. Used to organize firmware dependencies across vendors.
+
+**Examples and utilities for hardware acceleration**
+- [`acceleration_examples`](https://github.com/ros-acceleration/acceleration_examples): ROS 2 package examples demonstrating the use of hardware acceleration.
 - [`adaptive_component`](https://github.com/ros-acceleration/adaptive_component): A composable container for Adaptive ROS 2 Node computations. Select between FPGA, CPU or GPU at run-time.
 
+**Robotic Processing Unit (RPU)**
+- [meta-ticket](https://github.com/ros-acceleration/community/issues/25)
 ### Standards for subprojects
 
 Subprojects must meet the following criteria (and the WG agrees to maintain them upon adoption).
