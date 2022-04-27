@@ -151,7 +151,7 @@ Except for vacation periods and other exceptions, regular WG Meeting will genera
 
 ### Communication Channels
 
-* Instant messaging: [Matrix community](https://matrix.to/#/+hawg:matrix.org) (*Matrix is an open network for secure, decentralized communication*).
+* Instant messaging: [Matrix community](https://matrix.to/#/!wXVMnnDXlUNzkRjNCh:matrix.org?via=matrix.org) (*Matrix is an open network for secure, decentralized communication*).
 * Meeting invite group: [Meeting invite group](https://groups.google.com/g/ros-2-hardware-acceleration-wg)
 * Github organization: [ros-acceleration](https://github.com/ros-acceleration)
 * Discourse tag: [wg-acceleration](https://discourse.ros.org/tag/wg-acceleration)
