@@ -13,9 +13,9 @@ This document defines the scope and governance of the Working Group (WG). The ra
 |  | `2022` :warning: 5) Produce demonstrators with robot components, real robots and fleets that include acceleration to meet their targets (see [acceleration_examples](https://github.com/ros-acceleration/acceleration_examples)). |
 |  |  `2022` :white_check_mark: 7) Acceleration of complete ROS 2 computational graphs https://github.com/ros-acceleration/community/issues/20 |
 |  |  `2022` :new: 8) Merge first hardware accelerators (kernels) into upstream packages (*candidate*: [image_pipeline](https://github.com/ros-acceleration/image_pipeline), see `image_pipeline` instrumented at [#717](https://github.com/ros-perception/image_pipeline/pull/717) ) |
-|  |  `2022` :new: 9) Documentation and a *"methodology to hardware accelerate a ROS 2 package"* |
+|  |  `2022` :new: 9) Documentation and a *"methodology to hardware accelerate a ROS 2 package"* (see :white_check_mark: [#20](https://github.com/ros-acceleration/community/issues/20)) |
 |  |  `2022` :new: 10) Organize *workshops on robotics and ROS 2 Hardware Acceleration* |
-|  |  `2022` :new: (extra) 11) Robotic Processing Unit, first demonstrators [#25](https://github.com/ros-acceleration/community/issues/25) |
+|  |  `2022` :new: 11) Robotic Processing Unit, first demonstrators [#25](https://github.com/ros-acceleration/community/issues/25) |
 
 
 
@@ -24,7 +24,7 @@ This document defines the scope and governance of the Working Group (WG). The ra
 
 
 - [ROS 2 Hardware Acceleration Working Group](#ros-2-hardware-acceleration-working-group)
-  - [Architecture](#architecture)
+  - [The ROS 2 Hardware Acceleration Stack](#the-ros-2-hardware-acceleration-stack)
   - [Reference hardware platforms](#reference-hardware-platforms)
     - [Official](#official)
     - [Unofficial](#unofficial)
@@ -44,18 +44,29 @@ This document defines the scope and governance of the Working Group (WG). The ra
   - [References](#references)
 
 
-## Architecture
 
-![](imgs/architecture.png)
+## The ROS 2 Hardware Acceleration Stack
+
+The ROS 2 Hardware Acceleration Stack is a series of *extensions to ROS 2 which allow to leverage hardware acceleration and create custom compute architectures providing <ins>a faster ROS 2 execution and a timing-safe event-driven programming interface</ins>*. The stack is composed of 4 key elements and aims to be hardware and vendor-agnostic:
+
+| # | Standard/convention | Title | Rationale |
+|---|---------------------|-------|-----------|
+| `1` | [REP 2009](https://ros.org/reps/rep-2009.html) | [`Type Negotiation Feature`](https://ros.org/reps/rep-2009.html) | Allow ROS 2 Nodes to dynamically negotiate the message types used by publishers and subscriptions, as well adaptively modifying the behavior of publisher and subscriptions to align with accelerators |
+| `2` | [REP 2008](https://github.com/ros-infrastructure/rep/pull/324) | [`ROS 2 Hardware Acceleration Architecture and Conventions`](https://github.com/ros-infrastructure/rep/pull/324) | Architectural pillars and conventions required to introduce hardware acceleration in ROS 2 in a scalable and technology-agnostic manner. Presents one interface for all hardware acceleration vendors. |
+| `3` | [REP 2007](https://ros.org/reps/rep-2007.html) | [`Type Adaptation Feature`](https://ros.org/reps/rep-2007.html) | An extension to rclcpp that will make it easier to convert between ROS types and custom, user-defined types for Topics, Services, and Actions. |
+| `4` | [REP 2000](https://ros.org/reps/rep-2000.html) | [`ROS 2 Releases and Target Platforms`](https://ros.org/reps/rep-2000.html) | Production-grade multi-platform ROS support with Yocto |
+
+The ROS 2 Hardware Acceleration Working Group contributes and maintains open source implementations of various components of the stack above. A complete implementation of the `ROS 2 Hardware Acceleration Stack` including professional support, documentation, examples as well as reference designs is available at Acceleration Robotics' [ROBOTCORE™](https://accelerationrobotics.com/robotcore.php). Other solutions that implement of *part of the stack* include AMD's [KRS](https://xilinx.github.io/KRS/) (the Kria Robotics Stack), or NVIDIA's NITROS (NVIDIA Isaac Transport for ROS).
 
 
 ## Reference hardware platforms
 
 ### Official
-The following boards are supported:
+The following boards are recommended and actively used for development:
 
 | Board | Picture | Description | Firmware |
 |------------|-------|-------------|-------|
+| [Kria KR260 Robotics Starter Kit](https://www.xilinx.com/products/som/kria/kr260-robotics-starter-kit.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/products/som/kr260-angel-1.png) | The Kria™ KR260 robotics starter kit is built for robotics and industrial applications, complete with high performance interfaces and native ROS 2 support for ease of development by roboticists and software developers.  | [`acceleration_firmware_kr260`](https://github.com/ros-acceleration/acceleration_firmware_kr260)|
 | [Kria `KV260` Vision AI Starter Kit](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/products/som/som-kv260-4.png) | The Kria™ KV260 starter kit is a development platform for the K26, the first adaptive Single Board Computer. KV260 offers a compact board for edge vision and robotics applications.  | [`acceleration_firmware_kv260`](https://github.com/ros-acceleration/acceleration_firmware_kv260)|
 
 ### Unofficial
@@ -67,8 +78,9 @@ The following list includes boards that have been validated and have unofficial 
 | Board | Picture | Description | Firmware |
 |------------|-------|-------------|-------|
 | [Xilinx Zynq UltraScale+ MPSoC `ZCU102` Evaluation Kit](https://www.xilinx.com/products/boards-and-kits/ek-u1-zcu102-g.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/kits/whats-inside/zcu102-evaluation-board-w.jpg) | The ZCU102 Evaluation Kit enables designers to jumpstart designs for automotive, industrial, video, and communications applications. This kit features a Zynq® UltraScale+™ MPSoC with a quad-core Arm® Cortex®-A53, dual-core Cortex-R5F real-time processors, and a Mali™-400 MP2 graphics processing unit  | [`acceleration_firmware_zcu102`](https://github.com/ros-acceleration/acceleration_firmware_zcu102)|
-| [AVNET Ultra96-V2](https://www.avnet.com/wps/portal/us/products/new-product-introductions/npi/aes-ultra96-v2/) | ![](https://www.avnet.com/wps/wcm/connect/onesite/c163c966-18fa-44fc-81c0-e05425c52b5d/ultra96-v2-front-view.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_NA5A1I41L0ICD0ABNDMDDG0000-c163c966-18fa-44fc-81c0-e05425c52b5d-mBKcori) |  The Ultra96-V2 is an Arm-based, Xilinx Zynq UltraScale+™ MPSoC development board based on the Linaro 96Boards Consumer Edition (CE) specification and designed with a certified radio module from Microchip providing Wi-Fi and Bluetooth. All components are updated to allow industrial temperature grade options. Additional power control and monitoring will be possible with the included Infineon PMICs.| [`acceleration_firmware_ultra96v2`](https://github.com/ros-acceleration/acceleration_firmware_ultra96v2)|
+| [AVNET Ultra96-V2](https://www.avnet.com/wps/portal/us/products/new-product-introductions/npi/aes-ultra96-v2/) | ![](imgs/ultra96-v2-front-view.jpg) |  The Ultra96-V2 is an Arm-based, Xilinx Zynq UltraScale+™ MPSoC development board based on the Linaro 96Boards Consumer Edition (CE) specification and designed with a certified radio module from Microchip providing Wi-Fi and Bluetooth. All components are updated to allow industrial temperature grade options. Additional power control and monitoring will be possible with the included Infineon PMICs.| [`acceleration_firmware_ultra96v2`](https://github.com/ros-acceleration/acceleration_firmware_ultra96v2)|
 | [Zynq UltraScale+ MPSoC `ZCU104` Evaluation Kit](https://www.xilinx.com/products/boards-and-kits/zcu104.html) | ![](https://www.xilinx.com/content/dam/xilinx/imgs/kits/whats-inside/zcu104-evaluation-board-w.jpg) |  The ZCU104 Evaluation Kit enables designers to jumpstart designs for embedded vision applications such as surveillance, Advanced Driver Assisted Systems (ADAS), machine vision, Augmented Reality (AR), drones and medical imaging. This kit features a Zynq® UltraScale+™ MPSoC EV device with video codec and supports many common peripherals and interfaces for embedded vision use case. | |
+| [NVIDIA Jetson Nano](https://news.accelerationrobotics.com/ros-2-humble-in-nvidia-jetson-nano-with-yocto/) | 	![NVIDIA Jetson Nano](https://aws1.discourse-cdn.com/business7/uploads/ros/original/2X/8/89011c08f44841fd214bfa6aba69b1a020ad061a.png) | 	The Jetson Nano™ Developer Kit is a small, powerful computer that lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing. All in an easy-to-use platform that runs in as little as 5 watts.| [acceleration_firmware_jetson_nano](https://github.com/ros-acceleration/acceleration_firmware_jetson_nano)|
 
 </details>
 
@@ -101,6 +113,7 @@ The following subprojects are owned by the Working Group:
 **Examples and utilities for hardware acceleration**
 - [`acceleration_examples`](https://github.com/ros-acceleration/acceleration_examples): ROS 2 package examples demonstrating the use of hardware acceleration.
 - [`adaptive_component`](https://github.com/ros-acceleration/adaptive_component): A composable container for Adaptive ROS 2 Node computations. Select between FPGA, CPU or GPU at run-time.
+- [`image_pipeline`](https://github.com/ros-acceleration/image_pipeline): A fork for the ros-perception `image_pipeline` package that includes hardware acceleration capabilities for demonstrations purposes.
 
 **Robotic Processing Unit (RPU)**
 - [meta-ticket](https://github.com/ros-acceleration/community/issues/25)
@@ -147,7 +160,10 @@ Except for vacation periods and other exceptions, regular WG Meeting will genera
 - [ROS 2 Hardware Acceleration Working Group, meeting #4](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-4/22972) ([recording](https://youtu.be/zHawzTtxuhA))
 - [ROS 2 Hardware Acceleration Working Group, meeting #5](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-5/23827) ([recording](https://www.youtube.com/watch?v=ac-Yr2sRIxk&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=5))
 - [ROS 2 Hardware Acceleration Working Group, meeting #6](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-6/24207/6) ([recording](https://www.youtube.com/watch?v=MXrl4dkBA-4&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl))
-- [ROS 2 Hardware Acceleration Working Group, meeting #7](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-7/24603)
+- [ROS 2 Hardware Acceleration Working Group, meeting #7](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-7/24603) ([recording](https://www.youtube.com/watch?v=AOFHsCeiBEA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
+- [ROS 2 Hardware Acceleration Working Group, meeting #8](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-8/25147) ([recording](https://www.youtube.com/watch?v=KgxHmkFNNpA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
+- [ROS 2 Hardware Acceleration Working Group, meeting #9](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-9/25499) ([recording](https://www.youtube.com/watch?v=HROPmnIOjS4&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
+- [ROS 2 Hardware Acceleration Working Group, meeting #10](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-10/25852) 
 
 ### Communication Channels
 
@@ -209,3 +225,7 @@ Changes to this document will be made via Pull Request. The PR will be merged on
 - [5] [Lienen, C., & Platzner, M. (2021). Design of Distributed Reconfigurable Robotics Systems with ReconROS. arXiv preprint arXiv:2107.07208.](https://arxiv.org/pdf/2107.07208)
 
 - [6] [Wan, Z., Yu, B., Li, T. Y., Tang, J., Zhu, Y., Wang, Y., ... & Liu, S. (2021). A survey of fpga-based robotic computing. IEEE Circuits and Systems Magazine, 21(2), 48-74.](https://arxiv.org/abs/2009.06034)
+
+- [7] [Mayoral-Vilches, V., Neuman, S. M., Plancher, B., & Reddi, V. J. (2022). RobotCore: An Open Architecture for Hardware Acceleration in ROS 2. arXiv preprint arXiv:2205.03929.](https://arxiv.org/pdf/2205.03929.pdf)
+
+- [8] [Ichnowski, J., Chen, K., Dharmarajan, K., Adebola, S., Danielczuk, M., Mayoral-Vilches, V., ... & Goldberg, K. (2022). FogROS 2: An Adaptive and Extensible Platform for Cloud and Fog Robotics Using ROS 2. arXiv preprint arXiv:2205.09778.](https://arxiv.org/pdf/2205.09778.pdf)
