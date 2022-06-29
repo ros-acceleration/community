@@ -56,7 +56,7 @@ The ROS 2 Hardware Acceleration Stack is a series of *extensions to ROS 2 which 
 | `3` | [REP 2007](https://ros.org/reps/rep-2007.html) | [`Type Adaptation Feature`](https://ros.org/reps/rep-2007.html) | An extension to rclcpp that will make it easier to convert between ROS types and custom, user-defined types for Topics, Services, and Actions. |
 | `4` | [REP 2000](https://ros.org/reps/rep-2000.html) | [`ROS 2 Releases and Target Platforms`](https://ros.org/reps/rep-2000.html) | Production-grade multi-platform ROS support with Yocto |
 
-The ROS 2 Hardware Acceleration Working Group contributes and maintains open source implementations of various components of the stack above. A complete implementation of the `ROS 2 Hardware Acceleration Stack` including professional support, documentation, examples as well as reference designs is available at Acceleration Robotics' [ROBOTCORE™](https://accelerationrobotics.com/robotcore.php). Other solutions that implement of *part of the stack* include AMD's [KRS](https://xilinx.github.io/KRS/) (the Kria Robotics Stack), or NVIDIA's NITROS (NVIDIA Isaac Transport for ROS).
+The ROS 2 Hardware Acceleration Working Group contributes and maintains open source implementations of various components of the stack above. A complete implementation of the `ROS 2 Hardware Acceleration Stack` including professional support, documentation, examples as well as reference designs is available at Acceleration Robotics' [ROBOTCORE™](https://accelerationrobotics.com/robotcore.php). Other solutions that implement *part of the stack* include AMD's [KRS](https://xilinx.github.io/KRS/) (the Kria Robotics Stack), or NVIDIA's NITROS (NVIDIA Isaac Transport for ROS).
 
 
 ## Reference hardware platforms
@@ -121,7 +121,7 @@ The following subprojects are owned by the Working Group:
 
 Subprojects must meet the following criteria (and the WG agrees to maintain them upon adoption).
 
-* Build passes against ROS 2 Foxy - :warning: *moving to Rolling*
+* Build passes against ROS 2 Humble
 * If packages are part of nightly builds on the ROS build farm, there are no reported warnings or test failures
 * Issues and pull requests receive prompt responses
 * Releases go out regularly when bugfixes or new features are introduced
