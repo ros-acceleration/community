@@ -163,7 +163,7 @@ Except for vacation periods and other exceptions, regular WG Meeting will genera
 - [ROS 2 Hardware Acceleration Working Group, meeting #7](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-7/24603) ([recording](https://www.youtube.com/watch?v=AOFHsCeiBEA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
 - [ROS 2 Hardware Acceleration Working Group, meeting #8](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-8/25147) ([recording](https://www.youtube.com/watch?v=KgxHmkFNNpA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
 - [ROS 2 Hardware Acceleration Working Group, meeting #9](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-9/25499) ([recording](https://www.youtube.com/watch?v=HROPmnIOjS4&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
-- [ROS 2 Hardware Acceleration Working Group, meeting #10](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-10/25852) 
+- [ROS 2 Hardware Acceleration Working Group, meeting #10](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-10/25852) ([recording](https://www.youtube.com/watch?v=Hn2IVslaR_0&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
 
 ### Communication Channels
 
