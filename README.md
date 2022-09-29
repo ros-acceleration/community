@@ -116,7 +116,11 @@ The following subprojects are owned by the Working Group:
 - [`image_pipeline`](https://github.com/ros-acceleration/image_pipeline): A fork for the ros-perception `image_pipeline` package that includes hardware acceleration capabilities for demonstrations purposes.
 
 **Robotic Processing Unit (RPU)**
-- [meta-ticket](https://github.com/ros-acceleration/community/issues/25)
+- [`Robotic Processing Unit`](https://github.com/ros-acceleration/robotic_processing_unit)
+
+**Robotics MCU**
+- [`Robotics MCU` meta-ticket](https://github.com/ros-acceleration/community/issues/31)
+
 ### Standards for subprojects
 
 Subprojects must meet the following criteria (and the WG agrees to maintain them upon adoption).
