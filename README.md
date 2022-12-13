@@ -129,7 +129,7 @@ The following subprojects are owned by the Working Group:
 - [`RobotPerf`](https://robotperf.org/): an open reference benchmarking suite that is used to evaluate robotics computing performance fairly with ROS 2 as its common baseline, so that robotic architects can make informed decisions about the hardware and software components of their robotic systems.
   - https://github.com/robotperf
   - https://github.com/robotperf/benchmarks
-  - https://robotperf.org
+  - https://robotperf.github.io/
 
 
 ### Standards for subprojects
