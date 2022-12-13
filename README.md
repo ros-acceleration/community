@@ -124,6 +124,14 @@ The following subprojects are owned by the Working Group:
 **Robotics MCU**
 - [`Robotics MCU` meta-ticket](https://github.com/ros-acceleration/community/issues/31)
 
+
+**RobotPerf benchmarks**
+- [`RobotPerf`](https://robotperf.org/): an open reference benchmarking suite that is used to evaluate robotics computing performance fairly with ROS 2 as its common baseline, so that robotic architects can make informed decisions about the hardware and software components of their robotic systems.
+  - https://github.com/robotperf
+  - https://github.com/robotperf/benchmarks
+  - https://robotperf.org
+
+
 ### Standards for subprojects
 
 Subprojects must meet the following criteria (and the WG agrees to maintain them upon adoption).
@@ -171,6 +179,11 @@ Except for vacation periods and other exceptions, regular WG Meeting will genera
 - [ROS 2 Hardware Acceleration Working Group, meeting #8](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-8/25147) ([recording](https://www.youtube.com/watch?v=KgxHmkFNNpA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
 - [ROS 2 Hardware Acceleration Working Group, meeting #9](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-9/25499) ([recording](https://www.youtube.com/watch?v=HROPmnIOjS4&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
 - [ROS 2 Hardware Acceleration Working Group, meeting #10](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-10/25852) ([recording](https://www.youtube.com/watch?v=Hn2IVslaR_0&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
+- [ROS 2 Hardware Acceleration Working Group, meeting #11](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-11/27300) ([recording](https://www.youtube.com/watch?v=A_fsW-JHjpg&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl))
+- [ROS 2 Hardware Acceleration Working Group, meeting #12](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-12/27802) ([recording](https://www.youtube.com/watch?list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&v=JV8NSBbA0SA&embeds_euri=https%3A%2F%2Fdiscourse.ros.org%2F&source_ve_path=MjM4NTE&feature=emb_title))
+- [ROS 2 Hardware Acceleration Working Group, meeting #13](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-13/28273)
+
+
 
 ### Communication Channels
 
@@ -217,7 +230,7 @@ Such applications are accepted upon unanimous agreement from Approvers, and are 
 
 ### Modifying this governance document
 
-Changes to this document will be made via Pull Request. The PR will be merged on unanimous agreement from Approvers.
+Changes to this document will be made via Pull Request. The PR will be merged if a majority of the Approvers agree.
 
 ## References
 
