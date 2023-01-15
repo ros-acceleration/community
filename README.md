@@ -2,25 +2,34 @@
 
 This document defines the scope and governance of the Working Group (WG). The rationale behind some decisions is further justified in `REP-2008`: *ROS 2 Hardware Acceleration Architecture and Conventions* (see [pending PR](https://github.com/ros-infrastructure/rep/pull/324)).
 
-| Item | Description |
+| Year | Objective |
 |------|-------------|
-| **Mission** | Drive creation, maintenance and testing of acceleration kernels on top of open standards (C++ and OpenCL) for optimized ROS 2 and Gazebo interactions over different compute substrates (including FPGAs, GPUs and ASICs). |
-| **Scope** | hardware acceleration in a) embedded (edge) devices, b) workstations, c) data centers and d) cloud |
-| **Objectives** | `2021` :white_check_mark: 1) Design tools and conventions to seamlessly integrate acceleration kernels and related embedded binaries into the ROS 2 computational graphs leveraging its existing build system ([ament_acceleration](https://github.com/ros-acceleration/ament_acceleration) extensions) [^1], meta build tools ([colcon-acceleration](https://github.com/ros-acceleration/colcon-acceleration) extension) and a new firmware layer ([acceleration_firmware](https://github.com/ros-acceleration/acceleration_firmware)) [^3]. |
-|  |  `2021` :white_check_mark: 2) Provide [reference examples](https://github.com/ros-acceleration/acceleration_examples) and blueprints for acceleration architectures used in ROS 2 and Gazebo. |
-|  |  `2022` :white_check_mark: 3) Facilitate testing environments that allow to benchmark accelerators with special focus on power consumption and time spent on computations (see [HAWG benchmarking approach](https://github.com/ros-infrastructure/rep/pull/324/files#diff-f230b6aa06d86bf594d8e431300e453ad7343e8f4b1932252b6d36c62a8b5e0aR203-R267), [community#9](https://github.com/ros-acceleration/community/issues/9), [tracetools_acceleration](https://github.com/ros-acceleration/tracetools_acceleration), [ros2_kria](https://github.com/ros-acceleration/ros2_kria)) |
-|  | `2022` :warning: 4) Survey the community interests on acceleration for ROS 2 and Gazebo (see [discourse announcement](https://discourse.ros.org/t/hardware-acceleration-in-ros-2-and-gazebo-survey/23228), [survey](https://forms.gle/JibETmf92XyUde4r5)). |
-|  | `2022` :warning: 5) Produce demonstrators with robot components, real robots and fleets that include acceleration to meet their targets (see [acceleration_examples](https://github.com/ros-acceleration/acceleration_examples)). |
-|  |  `2022` :white_check_mark: 7) Acceleration of complete ROS 2 computational graphs https://github.com/ros-acceleration/community/issues/20 |
-|  |  `2022` :new: 8) Merge first hardware accelerators (kernels) into upstream packages (*candidate*: [image_pipeline](https://github.com/ros-acceleration/image_pipeline), see `image_pipeline` instrumented at [#717](https://github.com/ros-perception/image_pipeline/pull/717) ) |
-|  |  `2022` :new: 9) Documentation and a *"methodology to hardware accelerate a ROS 2 package"* (see :white_check_mark: [#20](https://github.com/ros-acceleration/community/issues/20)) |
-|  |  `2022` :new: 10) Organize *workshops on robotics and ROS 2 Hardware Acceleration* |
-|  |  `2022` :new: 11) Robotic Processing Unit, first demonstrators [#25](https://github.com/ros-acceleration/community/issues/25) |
-
+| `2021`  | ✅  1) Design tools and conventions to seamlessly integrate acceleration kernels and related embedded binaries into the ROS 2 computational graphs leveraging its existing build system ([ament_acceleration](https://github.com/ros-acceleration/ament_acceleration) extensions) [^1], meta build tools ([colcon-acceleration](https://github.com/ros-acceleration/colcon-acceleration) extension) and a new firmware layer ([acceleration_firmware](https://github.com/ros-acceleration/acceleration_firmware)) [^3]. |
+| `2021` |  ✅  2) Provide [reference examples](https://github.com/ros-acceleration/acceleration_examples) and blueprints for acceleration architectures used in ROS 2 and Gazebo. |
+| `2021` |  ✅  3) REP-2008 (*ROS 2 Hardware Acceleration Architecture and Conventions*) first draft proposed [PR](https://github.com/ros-infrastructure/rep/pull/324) |
+| | |
+| `2022`  |  ✅  4) Facilitate testing environments that allow to benchmark accelerators with special focus on power consumption and time spent on computations (see [HAWG benchmarking approach](https://github.com/ros-infrastructure/rep/pull/324/files#diff-f230b6aa06d86bf594d8e431300e453ad7343e8f4b1932252b6d36c62a8b5e0aR203-R267), [community#9](https://github.com/ros-acceleration/community/issues/9), [tracetools_acceleration](https://github.com/ros-acceleration/tracetools_acceleration), [ros2_kria](https://github.com/ros-acceleration/ros2_kria)) |
+| `2022`  | ✅  5) Survey the community interests on acceleration for ROS 2 and Gazebo (see [discourse announcement](https://discourse.ros.org/t/hardware-acceleration-in-ros-2-and-gazebo-survey/23228), [survey](https://forms.gle/JibETmf92XyUde4r5), [result](https://discourse.ros.org/t/2022-hardware-acceleration-report-in-robotics/27779)). |
+| `2022`  | ✅ 6) Produce demonstrators with robot components, real robots and fleets that include acceleration to meet their targets (see [acceleration_examples](https://github.com/ros-acceleration/acceleration_examples)). |
+| `2022`  |  ✅ 7) Acceleration of complete ROS 2 computational graphs https://github.com/ros-acceleration/community/issues/20 |
+| `2022`  |  ❌[^4] 8) Merge first hardware accelerators (kernels) into upstream packages (*candidate*: [image_pipeline](https://github.com/ros-acceleration/image_pipeline), see `image_pipeline` instrumented at [#717](https://github.com/ros-perception/image_pipeline/pull/717) ) |
+| `2022`  |  ✅ 9) Documentation and a *"methodology to hardware accelerate a ROS 2 package"* (see [#20](https://github.com/ros-acceleration/community/issues/20)) |
+| `2022`  |  ❌[^5] 10) Organize *workshops on robotics and ROS 2 Hardware Acceleration* |
+| `2022`  |  🚧  11) Robotic Processing Unit, first demonstrators [#25](https://github.com/ros-acceleration/community/issues/25) |
+| `2022`  |  ✅ 12) REP-2008 (*ROS 2 Hardware Acceleration Architecture and Conventions*) accepted as an [official standard](https://ros.org/reps/rep-2008.html) |
+| `2022`  |  ✅ 13) REP-2014 (*Benchmarking performance in ROS 2*) first draft proposed [PR](https://github.com/ros-infrastructure/rep/pull/364) |
+| | |
+|  `2023` | 🚧  11) REP-2014 (*Benchmarking performance in ROS 2*) |
+|  `2023` | 🚧  14) More vendor support. Will work to enable new silicon solutions |
+|  `2023` | 🚧  15) Robotics MCU [#31](https://github.com/ros-acceleration/community/issues/31) milestone 1 |
+|  `2023` | 🚧  16) [RobotPerf benchmarks](https://github.com/robotperf) |
+|  `2023` | 🚧  17) Robotic Processing Unit, first demonstrators [#25](https://github.com/ros-acceleration/community/issues/25) |
 
 
 [^1]: See [ament_vitis](https://github.com/ros-acceleration/ament_vitis)
 [^3]: See [acceleration_firmware_kv260](https://github.com/ros-acceleration/acceleration_firmware_kv260) for an exemplary *vendor extension* of the `acceleration_firmware` package
+[^4]: Did not get *buy-in* from maintainers. Stopped the effort.
+[^5]: Discarded for ROSCon and IROS. Lots of work.
 
 
 - [ROS 2 Hardware Acceleration Working Group](#ros-2-hardware-acceleration-working-group)
