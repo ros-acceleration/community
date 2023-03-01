@@ -139,6 +139,8 @@ The following subprojects are owned by the Working Group:
   - https://github.com/robotperf
   - https://github.com/robotperf/benchmarks
   - https://robotperf.github.io/
+- Meetings:
+  - RobotPerf#1 meeting ([recording](https://www.youtube.com/watch?v=Ewq9EIHEqEE&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
 
 
 ### Standards for subprojects
@@ -190,8 +192,9 @@ Except for vacation periods and other exceptions, regular WG Meeting will genera
 - [ROS 2 Hardware Acceleration Working Group, meeting #10](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-10/25852) ([recording](https://www.youtube.com/watch?v=Hn2IVslaR_0&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
 - [ROS 2 Hardware Acceleration Working Group, meeting #11](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-11/27300) ([recording](https://www.youtube.com/watch?v=A_fsW-JHjpg&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl))
 - [ROS 2 Hardware Acceleration Working Group, meeting #12](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-12/27802) ([recording](https://www.youtube.com/watch?list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&v=JV8NSBbA0SA&embeds_euri=https%3A%2F%2Fdiscourse.ros.org%2F&source_ve_path=MjM4NTE&feature=emb_title))
-- [ROS 2 Hardware Acceleration Working Group, meeting #13](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-13/28273)
-
+- [ROS 2 Hardware Acceleration Working Group, meeting #13](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-13/28273) ([recording](https://www.youtube.com/watch?v=2d9l2Pm5g3k&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
+- [ROS 2 Hardware Acceleration Working Group, meeting #14](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-14/29265) ([recording](https://www.youtube.com/watch?v=-K32-n84pnU&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
+- [ROS 2 Hardware Acceleration Working Group, meeting #15](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-15/29767) ([recording](https://www.youtube.com/watch?v=zPIFBWbe6ek&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
 
 
 ### Communication Channels
