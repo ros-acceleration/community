@@ -143,6 +143,8 @@ The following subprojects are owned by the Working Group:
   - RobotPerf#1 meeting ([recording](https://www.youtube.com/watch?v=Ewq9EIHEqEE&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
   - RobotPerf#2 meeting ([recording](https://www.youtube.com/watch?v=eV7Do5khhOE&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=3))
   - RobotPerf#3 meeting ([recording](https://www.youtube.com/watch?v=zJXJhsl5DyM&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))  
+  - RobotPerf#4 meeting ([recording](https://www.youtube.com/watch?v=Z2k7F17Md2I&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=7))  
+
 
 
 ### Standards for subprojects
@@ -182,21 +184,28 @@ PR will be merged on unanimous approval from Approvers. If the repositories of t
 Except for vacation periods and other exceptions, regular WG Meeting will generally happen once a month or more often. Meetings are announced in ROS Discourse and [minutes](https://docs.google.com/document/d/185Cy1xjpAOgJygEOnlf5OCgOQTywmF0qgSpS3GiW16Q/edit#) are kept.
 
 - [Proposal for ROS 2 Hardware Acceleration Working Group (HAWG)](https://discourse.ros.org/t/proposal-for-ros-2-hardware-acceleration-working-group-hawg/20112/27)
-- [ROS 2 Hardware Acceleration Working Group, meeting #1](https://discourse.ros.org/t/announcing-the-hardware-acceleration-wg-meeting-1/20826) ([recording](https://www.youtube.com/watch?v=QfRHJgeSAOw))
-- [ROS 2 Hardware Acceleration Working Group, meeting #2](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-2/21789) ([recording](https://www.youtube.com/watch?v=a1I4rue1px8))
-- [ROS 2 Hardware Acceleration Working Group, meeting #3](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-3/22535) ([recording](https://www.youtube.com/watch?v=GUwS3La8s6Y))
-- [ROS 2 Hardware Acceleration Working Group, meeting #4](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-4/22972) ([recording](https://youtu.be/zHawzTtxuhA))
-- [ROS 2 Hardware Acceleration Working Group, meeting #5](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-5/23827) ([recording](https://www.youtube.com/watch?v=ac-Yr2sRIxk&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=5))
-- [ROS 2 Hardware Acceleration Working Group, meeting #6](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-6/24207/6) ([recording](https://www.youtube.com/watch?v=MXrl4dkBA-4&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl))
-- [ROS 2 Hardware Acceleration Working Group, meeting #7](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-7/24603) ([recording](https://www.youtube.com/watch?v=AOFHsCeiBEA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
-- [ROS 2 Hardware Acceleration Working Group, meeting #8](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-8/25147) ([recording](https://www.youtube.com/watch?v=KgxHmkFNNpA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
-- [ROS 2 Hardware Acceleration Working Group, meeting #9](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-9/25499) ([recording](https://www.youtube.com/watch?v=HROPmnIOjS4&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=2))
-- [ROS 2 Hardware Acceleration Working Group, meeting #10](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-10/25852) ([recording](https://www.youtube.com/watch?v=Hn2IVslaR_0&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
-- [ROS 2 Hardware Acceleration Working Group, meeting #11](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-11/27300) ([recording](https://www.youtube.com/watch?v=A_fsW-JHjpg&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl))
-- [ROS 2 Hardware Acceleration Working Group, meeting #12](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-12/27802) ([recording](https://www.youtube.com/watch?list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&v=JV8NSBbA0SA&embeds_euri=https%3A%2F%2Fdiscourse.ros.org%2F&source_ve_path=MjM4NTE&feature=emb_title))
-- [ROS 2 Hardware Acceleration Working Group, meeting #13](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-13/28273) ([recording](https://www.youtube.com/watch?v=2d9l2Pm5g3k&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
-- [ROS 2 Hardware Acceleration Working Group, meeting #14](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-14/29265) ([recording](https://www.youtube.com/watch?v=-K32-n84pnU&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
-- [ROS 2 Hardware Acceleration Working Group, meeting #15](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-15/29767) ([recording](https://www.youtube.com/watch?v=zPIFBWbe6ek&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=1))
+- [ROS 2 Hardware Acceleration Working Group, meeting #1](https://discourse.ros.org/t/announcing-the-hardware-acceleration-wg-meeting-1/20826) ([recording](https://www.youtube.com/watch?v=QfRHJgeSAOw&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=26))
+- [ROS 2 Hardware Acceleration Working Group, meeting #2](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-2/21789) ([recording](https://www.youtube.com/watch?v=a1I4rue1px8&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=26))
+- [ROS 2 Hardware Acceleration Working Group, meeting #3](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-3/22535) ([recording](https://www.youtube.com/watch?v=GUwS3La8s6Y&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=25))
+- [ROS 2 Hardware Acceleration Working Group, meeting #4](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-4/22972) ([recording](https://www.youtube.com/watch?v=zHawzTtxuhA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=24))
+- [ROS 2 Hardware Acceleration Working Group, meeting #5](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-5/23827) ([recording](https://www.youtube.com/watch?v=ac-Yr2sRIxk&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=23))
+- [ROS 2 Hardware Acceleration Working Group, meeting #6](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-6/24207) ([recording](https://www.youtube.com/watch?v=MXrl4dkBA-4&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=22))
+- [ROS 2 Hardware Acceleration Working Group, meeting #7](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-7/24603) ([recording](https://www.youtube.com/watch?v=AOFHsCeiBEA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=21))
+- [ROS 2 Hardware Acceleration Working Group, meeting #8](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-8/25147) ([recording](https://www.youtube.com/watch?v=KgxHmkFNNpA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=20))
+- [ROS 2 Hardware Acceleration Working Group, meeting #9](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-9/25499) ([recording](https://www.youtube.com/watch?v=HROPmnIOjS4&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=19))
+- [ROS 2 Hardware Acceleration Working Group, meeting #10](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-10/25852) ([recording](https://www.youtube.com/watch?v=Hn2IVslaR_0&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=17))
+- [ROS 2 Hardware Acceleration Working Group, meeting #11](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-11/27300) ([recording](https://www.youtube.com/watch?v=A_fsW-JHjpg&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=18))
+- [ROS 2 Hardware Acceleration Working Group, meeting #12](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-12/27802) ([recording](https://www.youtube.com/watch?v=JV8NSBbA0SA&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=16))
+- [ROS 2 Hardware Acceleration Working Group, meeting #13](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-13/28273) ([recording](https://www.youtube.com/watch?v=2d9l2Pm5g3k&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=15))
+- [ROS 2 Hardware Acceleration Working Group, meeting #14](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-14/29265) ([recording](https://www.youtube.com/watch?v=-K32-n84pnU&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=13))
+- [ROS 2 Hardware Acceleration Working Group, meeting #15](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-15/29767) ([recording](https://www.youtube.com/watch?v=zPIFBWbe6ek&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=12))
+- [ROS 2 Hardware Acceleration Working Group, meeting #16](https://discourse.ros.org/t/hardware-acceleration-wg-meeting-16/30305) ([recording](https://www.youtube.com/watch?v=wiL3RBY-dhg&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=7))
+- [ROS 2 Hardware Acceleration Working Group, meeting #17](https://discourse.ros.org/t/ros-2-hardware-acceleration-working-group-grows-with-robotperf-subproject-more-meetings-and-more-people-participating/29900) ([recording](https://www.youtube.com/watch?v=5PhBUV1_tIY&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=7))
+- [ROS 2 Hardware Acceleration Working Group, meeting #18](https://discourse.ros.org/t/ros-2-hardware-acceleration-working-group-grows-with-robotperf-subproject-more-meetings-and-more-people-participating/29900) ([recording](https://www.youtube.com/watch?v=3nloIrW1UUM&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=5))
+- [ROS 2 Hardware Acceleration Working Group, meeting #19](https://www.linkedin.com/events/ros2hardwareaccelerationworking7054871028115681280/) ([recording](https://www.youtube.com/watch?v=BeUFuOS-fc0&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=5))
+- [ROS 2 Hardware Acceleration Working Group, meeting #20](https://www.linkedin.com/events/ros2hardwareaccelerationworking7056728419631345665/) ([recording](https://www.youtube.com/watch?v=DDiTuLV0ehI&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=3))
+- [ROS 2 Hardware Acceleration Working Group, meeting #21](https://www.linkedin.com/events/ros2hardwareaccelerationworking7059211618349424640/) ([recording](https://www.youtube.com/watch?v=ik-16BV56EM&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=3))
+
 
 
 ### Communication Channels
