@@ -205,6 +205,7 @@ Except for vacation periods and other exceptions, regular WG Meeting will genera
 - [ROS 2 Hardware Acceleration Working Group, meeting #19](https://www.linkedin.com/events/ros2hardwareaccelerationworking7054871028115681280/) ([recording](https://www.youtube.com/watch?v=BeUFuOS-fc0&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=5))
 - [ROS 2 Hardware Acceleration Working Group, meeting #20](https://www.linkedin.com/events/ros2hardwareaccelerationworking7056728419631345665/) ([recording](https://www.youtube.com/watch?v=DDiTuLV0ehI&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=3))
 - [ROS 2 Hardware Acceleration Working Group, meeting #21](https://www.linkedin.com/events/ros2hardwareaccelerationworking7059211618349424640/) ([recording](https://www.youtube.com/watch?v=ik-16BV56EM&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=3))
+- [ROS 2 Hardware Acceleration Working Group, meeting #22](https://www.linkedin.com/events/ros2hardwareaccelerationworking7061747608276377600/) ([recording](https://www.youtube.com/watch?v=L-7Bw-pCYE8&list=PLf4Fnww4KiFeiP1fNQXgJhyuEI760NVIl&index=27))
 
 
 
