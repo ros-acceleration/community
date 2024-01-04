@@ -141,9 +141,6 @@ The following subprojects are owned by the Working Group:
 **Robotic Processing Unit (RPU)**
 - [`Robotic Processing Unit`](https://github.com/ros-acceleration/robotic_processing_unit)
 
-**Robotics MCU**
-- [`Robotics MCU` meta-ticket](https://github.com/ros-acceleration/community/issues/31)
-
 
 **RobotPerf benchmarks**
 - [`RobotPerf`](https://robotperf.org/): an open reference benchmarking suite that is used to evaluate robotics computing performance fairly with ROS 2 as its common baseline, so that robotic architects can make informed decisions about the hardware and software components of their robotic systems.
@@ -268,6 +265,8 @@ Such applications are accepted upon unanimous agreement from Approvers, and are 
 Changes to this document will be made via Pull Request. The PR will be merged if a majority of the Approvers agree.
 
 ## References
+
+- [0] [Mayoral-Vilches, Víctor, et al. "RobotPerf: An Open-Source, Vendor-Agnostic, Benchmarking Suite for Evaluating Robotics Computing System Performance." arXiv preprint arXiv:2309.09212 (2023).](https://arxiv.org/pdf/2309.09212.pdf)
 
 - [1] [Mayoral-Vilches, V., & Corradi, G. (2021). Adaptive Computing in Robotics, Leveraging ROS 2 to Enable Software-Defined Hardware for FPGAs. arXiv preprint arXiv:2109.03276.](https://arxiv.org/ftp/arxiv/papers/2109/2109.03276.pdf)
 
