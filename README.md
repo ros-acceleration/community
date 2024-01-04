@@ -270,16 +270,18 @@ Changes to this document will be made via Pull Request. The PR will be merged if
 
 - [1] [Mayoral-Vilches, V., & Corradi, G. (2021). Adaptive Computing in Robotics, Leveraging ROS 2 to Enable Software-Defined Hardware for FPGAs. arXiv preprint arXiv:2109.03276.](https://arxiv.org/ftp/arxiv/papers/2109/2109.03276.pdf)
 
-- [2] Mayoral-Vilches, V., REP-2008 - ROS 2 Hardware Acceleration Architecture and Conventions (see [pending PR](https://github.com/ros-infrastructure/rep/pull/324))
+- [2] [Mayoral-Vilches, V., REP-2008 - ROS 2 Hardware Acceleration Architecture and Conventions](https://ros.org/reps/rep-2008.html)
 
 - [3] [Mayoral-Vilches, V. (2021). Kria Robotics Stack A ROS 2-centric Approach for Hardware Acceleration in Robotics](https://www.xilinx.com/content/dam/xilinx/support/documentation/white_papers/wp540-kria-robotics-stack.pdf). Xilinx Inc.
 
-- [4] [Lienen, C., Platzner, M., & Rinner, B. (2020, December). ReconROS: Flexible Hardware Acceleration for ROS2 Applications. In 2020 International Conference on Field-Programmable Technology (ICFPT) (pp. 268-276). IEEE.](https://bernhardrinner.com/pubs/2020/Lienen_FPT2020.pdf)
+- [4] [Mayoral-Vilches, V., et al. "REP-2014 - Benchmarking performance in ROS 2"](https://ros.org/reps/rep-2014.html)
 
-- [5] [Lienen, C., & Platzner, M. (2021). Design of Distributed Reconfigurable Robotics Systems with ReconROS. arXiv preprint arXiv:2107.07208.](https://arxiv.org/pdf/2107.07208)
+- [5] [Lienen, C., Platzner, M., & Rinner, B. (2020, December). ReconROS: Flexible Hardware Acceleration for ROS2 Applications. In 2020 International Conference on Field-Programmable Technology (ICFPT) (pp. 268-276). IEEE.](https://bernhardrinner.com/pubs/2020/Lienen_FPT2020.pdf)
 
-- [6] [Wan, Z., Yu, B., Li, T. Y., Tang, J., Zhu, Y., Wang, Y., ... & Liu, S. (2021). A survey of fpga-based robotic computing. IEEE Circuits and Systems Magazine, 21(2), 48-74.](https://arxiv.org/abs/2009.06034)
+- [6] [Lienen, C., & Platzner, M. (2021). Design of Distributed Reconfigurable Robotics Systems with ReconROS. arXiv preprint arXiv:2107.07208.](https://arxiv.org/pdf/2107.07208)
 
-- [7] [Mayoral-Vilches, V., Neuman, S. M., Plancher, B., & Reddi, V. J. (2022). RobotCore: An Open Architecture for Hardware Acceleration in ROS 2. arXiv preprint arXiv:2205.03929.](https://arxiv.org/pdf/2205.03929.pdf)
+- [7] [Wan, Z., Yu, B., Li, T. Y., Tang, J., Zhu, Y., Wang, Y., ... & Liu, S. (2021). A survey of fpga-based robotic computing. IEEE Circuits and Systems Magazine, 21(2), 48-74.](https://arxiv.org/abs/2009.06034)
 
-- [8] [Ichnowski, J., Chen, K., Dharmarajan, K., Adebola, S., Danielczuk, M., Mayoral-Vilches, V., ... & Goldberg, K. (2022). FogROS 2: An Adaptive and Extensible Platform for Cloud and Fog Robotics Using ROS 2. arXiv preprint arXiv:2205.09778.](https://arxiv.org/pdf/2205.09778.pdf)
+- [8] [Mayoral-Vilches, V., Neuman, S. M., Plancher, B., & Reddi, V. J. (2022). RobotCore: An Open Architecture for Hardware Acceleration in ROS 2. arXiv preprint arXiv:2205.03929.](https://arxiv.org/pdf/2205.03929.pdf)
+
+- [9] [Ichnowski, J., Chen, K., Dharmarajan, K., Adebola, S., Danielczuk, M., Mayoral-Vilches, V., ... & Goldberg, K. (2022). FogROS 2: An Adaptive and Extensible Platform for Cloud and Fog Robotics Using ROS 2. arXiv preprint arXiv:2205.09778.](https://arxiv.org/pdf/2205.09778.pdf)
